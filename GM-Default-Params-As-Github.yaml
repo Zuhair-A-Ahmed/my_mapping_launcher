@@ -1,0 +1,38 @@
+#Map paramteres
+xmin: -100
+ymin: -100
+xmax: 100
+ymax: 100
+delta: 0.05
+occ_thresh: 0.25
+#Measurements (Observations) Update parameters
+linearUpdate: 1.0
+angularUpdate: 0.5
+temporalUpdate: -1.0
+#Robot Motion Model Parameters
+srr: 0.1
+srt: 0.2
+str: 0.1
+stt: 0.2
+#Laser ScanMatching parameters
+#if there is no yaml file the values will be:
+#maxRange = maxUrange 3.49 for turtlebot3
+throttle_scans: 1
+sigma: 0.05
+lsigma: 0.075
+kernelSize: 1
+lstep: 0.05
+astep: 0.05
+iterations: 5
+lskip: 0
+#Likelihood sampling (used in scan matching)
+llsamplerange: 0.01
+llsamplestep: 0.01
+lasamplerange: 0.005
+lasamplestep: 0.005
+#Significant parameters
+particles: 30
+map_update_interval: 5.0
+minimumScore: 0
+ogain: 3.0
+resampleThreshold: 0.5
